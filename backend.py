@@ -26,6 +26,6 @@ def download_playlist_tracks(url, target_folder):
         process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
         output, error = process.communicate()
 
-url = input("Paste youtube link")
+url = input("Paste link to a playlist: ")
 target_folder = input("Enter directory where to download. For example '/home/user/Music)': ")
 download_playlist_tracks(url, target_folder)
